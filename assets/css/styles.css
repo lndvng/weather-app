@@ -1,0 +1,12 @@
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.primary {
+    background-color: rgb(197, 194, 194);
+}

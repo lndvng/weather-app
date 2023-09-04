@@ -3,12 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>WeatherHub</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css">
+    <!-- linked google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- TODO: add API -->
+    <script src="https://kit.fontawesome.com/54ab8fb147.js" crossorigin="anonymous"></script>
     <script defer src="./js/script.js"></script>
 </head>
 
 <body>
-    
+    <header class="weather">
+        <h1 class="text-center m-auto primary p-2">WeatherHub</h1>
+    </header>
+    <main class="row p-4">
+        <section class="search col-3 p-2 ">
+            <h2>Search for a City:</h2>
+            <div class="cityEntry mb-2">
+                <input type="text" class="form-control" placeholder="enter city" aria-label="enter city" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">search</button>
+              </div>
+              <div class="cityOptions"></div>
+        </section>
+        <section class="forecast col-9">
+            <div class="forecast border border-black p-2 mb-2 ">
+                <h2 id="forecastCity">Forecast</h2>
+                <ul class="list-unstyled">
+                    <li id="temp">Temperature: </li>
+                    <li id="humidity">Humidity: </li>
+                    <li id="windSpeed">Wind Speed: </li>
+                </ul>
+            </div>
+        <div class="fiveDay border border-black p-2 row justify-content-between ">
+            <h2>5-day Forecast</h2>
+            <ul class="list-unstyled col-2 primary">
+                <li class="date">Date: </li>
+                <li class="icon"> </li>
+                <li class="temp">Temp: </li>
+                <li class="humidity">Humidity: </li>
+                <li class="windSpeed">Wind: </li>
+            </ul>
+            <ul class="list-unstyled col-2 primary">
+                <li class="date">Date: </li>
+                <li class="icon"> </li>
+                <li class="temp">Temp: </li>
+                <li class="humidity">Humidity: </li>
+                <li class="windSpeed">Wind: </li>
+            </ul>
+            <ul class="list-unstyled col-2 primary">
+                <li class="date">Date: </li>
+                <li class="icon"> </li>
+                <li class="temp">Temp: </li>
+                <li class="humidity">Humidity: </li>
+                <li class="windSpeed">Wind: </li>
+            </ul>
+            <ul class="list-unstyled col-2 primary">
+                <li class="date">Date: </li>
+                <li class="icon"> </li>
+                <li class="temp">Temp: </li>
+                <li class="humidity">Humidity: </li>
+                <li class="windSpeed">Wind: </li>
+            </ul>
+            <ul class="list-unstyled col-2 primary">
+                <li id="date">Date: </li>
+                <li id="icon"> </li>
+                <li id="temp">Temp: </li>
+                <li id="humidity">Humidity: </li>
+                <li id="windSpeed">Wind: </li>
+            </ul>
+        </div>
+        </section>
+    </main>
 </body>
 </html>
