@@ -10,3 +10,12 @@ main {
 .primary {
     background-color: rgb(197, 194, 194);
 }
+
+.fiveDay {
+    margin: 0;
+    max-width: 100%;
+}
+
+.fiveDay ul {
+    font-size: 12px;
+}

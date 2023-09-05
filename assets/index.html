@@ -21,13 +21,35 @@
         <section class="search col-3 p-2 ">
             <h2>Search for a City:</h2>
             <div class="cityEntry mb-2">
-                <input type="text" class="form-control" placeholder="enter city" aria-label="enter city" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">search</button>
+                <input 
+                    type="text" 
+                    class="form-control w-100 mb-2 p-1" placeholder="enter city" aria-label="enter city" aria-describedby="button-addon2">
+                <button 
+                    class="btn btn-outline-secondary w-100  mb-2" 
+                    type="button" id="button-addon2">search
+                </button>
               </div>
-              <div class="cityOptions"></div>
+              <div class="cityOptions btn-group-vertical w-100">
+                <button 
+                    class="btn rounded btn-outline-secondary primary mb-1" type="button">city
+                </button>
+                <button 
+                    class="btn rounded btn-outline-secondary primary mb-1" type="button">city
+                </button>
+                <button 
+                    class="btn rounded btn-outline-secondary primary mb-1" type="button">city
+                </button>
+                <button 
+                    class="btn rounded btn-outline-secondary primary mb-1" type="button">city
+                </button>
+                <button 
+                    class="btn rounded btn-outline-secondary primary mb-1" type="button">city
+                </button>
+    
+              </div>
         </section>
-        <section class="forecast col-9">
-            <div class="forecast border border-black p-2 mb-2 ">
+        <section class="container col-9">
+            <div class="forecast border border-black rounded p-2 mb-2 ">
                 <h2 id="forecastCity">Forecast</h2>
                 <ul class="list-unstyled">
                     <li id="temp">Temperature: </li>
@@ -35,42 +57,42 @@
                     <li id="windSpeed">Wind Speed: </li>
                 </ul>
             </div>
-        <div class="fiveDay border border-black p-2 row justify-content-between ">
+        <div class="fiveDay border border-black rounded p-2 row justify-content-evenly">
             <h2>5-day Forecast</h2>
-            <ul class="list-unstyled col-2 primary">
+            <ul class="list-unstyled rounded col-2 primary pb-5 pt-2 ">
                 <li class="date">Date: </li>
                 <li class="icon"> </li>
                 <li class="temp">Temp: </li>
                 <li class="humidity">Humidity: </li>
                 <li class="windSpeed">Wind: </li>
             </ul>
-            <ul class="list-unstyled col-2 primary">
+            <ul class="list-unstyled rounded col-2 primary pt-2 ">
                 <li class="date">Date: </li>
                 <li class="icon"> </li>
                 <li class="temp">Temp: </li>
                 <li class="humidity">Humidity: </li>
                 <li class="windSpeed">Wind: </li>
             </ul>
-            <ul class="list-unstyled col-2 primary">
+            <ul class="list-unstyled rounded col-2 primary pt-2 ">
                 <li class="date">Date: </li>
                 <li class="icon"> </li>
                 <li class="temp">Temp: </li>
                 <li class="humidity">Humidity: </li>
                 <li class="windSpeed">Wind: </li>
             </ul>
-            <ul class="list-unstyled col-2 primary">
+            <ul class="list-unstyled rounded col-2 primary pt-2 ">
                 <li class="date">Date: </li>
                 <li class="icon"> </li>
                 <li class="temp">Temp: </li>
                 <li class="humidity">Humidity: </li>
                 <li class="windSpeed">Wind: </li>
             </ul>
-            <ul class="list-unstyled col-2 primary">
-                <li id="date">Date: </li>
-                <li id="icon"> </li>
-                <li id="temp">Temp: </li>
-                <li id="humidity">Humidity: </li>
-                <li id="windSpeed">Wind: </li>
+            <ul class="list-unstyled rounded col-2 primary pt-2 ">
+                <li class="date">Date: </li>
+                <li class="icon"> </li>
+                <li class="temp">Temp: </li>
+                <li class="humidity">Humidity: </li>
+                <li class="windSpeed">Wind: </li>
             </ul>
         </div>
         </section>
