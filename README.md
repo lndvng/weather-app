@@ -11,7 +11,7 @@ My motivation for this was to create a weather app. The app will have a search b
 
 ## Usage
 
-![weather app main page screenshot](./assets/images/weather-main-page.png)
+![weather app main page screenshot](./assets/images/weather-main.png)
 This is the main page of the weather app. Users can look up the weather by city using the search field. Clicking on the search button will generate the current forecast, and the forecast for the next 5 days. 
 
 ## Deployed Website Link
