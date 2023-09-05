@@ -1,20 +1,19 @@
-# weather-app
+# Weather-App
 
-<!-- acceptance criteria:
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
+## Description
+My motivation for this was to create a weather app. The app will have a search bar for users to input their city of choice to view the forecast for the current day and the next five days as well. I leanred how to work with different webAPIs to pull the proper weather data needed per section.
 
-GIVEN a weather dashboard with form inputs
+## Installation
 
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
+1. Clone from repo.
+2. Open folder with visual studio code or any text editor of choice.
+3. Run index.html to run code.
 
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed
+## Usage
 
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+![weather app main page screenshot](./assets/images/weather-main-page.png)
+This is the main page of the weather app. Users can look up the weather by city using the search field. Clicking on the search button will generate the current forecast, and the forecast for the next 5 days. 
 
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city  -->
+## Deployed Website Link
+
+https://lndvng.github.io/weather-app/
