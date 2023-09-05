@@ -1,7 +1,7 @@
 # Weather-App
 
 ## Description
-My motivation for this was to create a weather app. The app will have a search bar for users to input their city of choice to view the forecast for the current day and the next five days as well. I leanred how to work with different webAPIs to pull the proper weather data needed per section.
+My motivation for this was to create a weather app. The app will have a search bar for users to input their city of choice to view the forecast for the current day and the next five days as well. I learned how to work with different webAPIs to pull the proper weather data needed per section.
 
 ## Installation
 
