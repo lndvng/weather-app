@@ -31,11 +31,10 @@ function displayWeatherData(weatherData) {
 }
 
 // request API for five day container
-
 function getForecastData(city) {
     let apiUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=9997ba272b04892d57f7add3dd35b249&units=imperial';
     
-    // fetch API to make GET request to API
+// fetch API to make GET request to API
 fetch(apiUrl)
     .then(function (response) {
         return response.json();
@@ -60,7 +59,6 @@ function displayForecastData(forecastData) {
 
     // define variables from data extracted from API
     let dateTime = forecastItem.dt_txt.slice(0, 10);
-    let iconCode = forecastItem.weather[0].icon;
     let temperature = forecastItem.main.temp;
     let humidity = forecastItem.main.humidity;
     let windSpeed = forecastItem.wind.speed;
@@ -79,9 +77,24 @@ function displayForecastData(forecastData) {
 button.addEventListener('click', function (event) {
     event.preventDefault();
     const cityEntry = document.querySelector('.form-control').value;
+    document.querySelector('.form-control').value = "";
     getWeatherData(cityEntry);
     getForecastData(cityEntry);
 
-    localStorage.setItem('city', cityEntry);
-});
+    // grabbing the array from local storage if it exists, and assigning that to searchHistory
+    let searchHistory = JSON.parse(localStorage.getItem('city')) || []
+    searchHistory.push(cityEntry);
+    localStorage.setItem('city', JSON.stringify(searchHistory));
 
+    // create new button based on user searchHistory that will generate the weather data for that city
+    let historyButton = document.createElement('button');
+    historyButton.textContent = cityEntry
+    historyButton.classList.add("btn", "rounded", "btn-outline-secondary", "primary", "mb-1");
+    historyButton.addEventListener('click', function (event) { 
+        getWeatherData(event.target.textContent);
+        getForecastData(event.target.textContent);    
+    })
+
+    // attach the button onto page
+    document.querySelector('.cityOptions').append(historyButton);
+});
